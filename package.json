@@ -1,6 +1,6 @@
 {
   "name": "juuust-react-icon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
