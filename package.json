@@ -24,8 +24,8 @@
   "homepage": "https://github.com/leadream/juuust-react-icon#readme",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
-    "generate": "sudo rm -rf src/icons && node bin/build.js",
-    "build:bundle": "sudo rm -rf dist && node_modules/.bin/rollup --c ./build/rollup.config.bundle.js",
+    "generate": "rm -rf src/icons && node bin/build.js",
+    "build:bundle": "rm -rf dist && node_modules/.bin/rollup --c ./build/rollup.config.bundle.js",
     "dev": "rollup -w -c ./build/rollup.config.dev.js",
     "build": "rollup -c ./build/rollup.config.prod.js"
   },
@@ -34,9 +34,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "nanoid": "^3.1.23",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "shortid": "^2.2.16",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

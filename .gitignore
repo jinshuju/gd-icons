@@ -6,3 +6,8 @@ dist
 docs
 yarn-error.log
 .DS_Store
+src/icons
+src/svg
+src/icons.js
+src/icons.d.ts
+src/data.json
