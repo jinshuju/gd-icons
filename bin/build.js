@@ -72,7 +72,7 @@ const generateIconCode = async ({ name }) => {
   const destination = path.join(rootDir, "src/icons", `${names.name}.js`);
   const code = fs.readFileSync(location);
   const svgCode = await processSvg(code);
-  const ComponentName = names.componentName;
+  const ComponentName = `${nanoid(names.componentName)}Icon`;
   const element = getElementCode(
     ComponentName,
     attrsToString(getAttrs(names.style), names.style),
@@ -94,7 +94,7 @@ const generateIconCode = async ({ name }) => {
   fs.writeFileSync(destination, component, "utf-8");
 
   console.log("Successfully built", ComponentName);
-  return { ComponentName: nanoid(ComponentName), name: names.name };
+  return { ComponentName: ComponentName, name: names.name };
 };
 
 // append export code to icons.js
