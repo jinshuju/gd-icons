@@ -10,9 +10,6 @@ const { getAttrs, getElementCode } = require("./template");
 const icons = require("../src/data.json");
 const { ensureDirSync } = require("fs-extra");
 
-const { customAlphabet } = require("nanoid");
-
-const nanoid = customAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 10);
 const rootDir = path.join(__dirname, "..");
 
 // where icons code in
@@ -72,7 +69,7 @@ const generateIconCode = async ({ name }) => {
   const destination = path.join(rootDir, "src/icons", `${names.name}.js`);
   const code = fs.readFileSync(location);
   const svgCode = await processSvg(code);
-  const ComponentName = `${nanoid(names.componentName)}Icon`;
+  const ComponentName = `${names.componentName}Icon`;
   const element = getElementCode(
     ComponentName,
     attrsToString(getAttrs(names.style), names.style),
