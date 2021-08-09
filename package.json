@@ -1,6 +1,6 @@
 {
   "name": "@gd-uikit/icons",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
