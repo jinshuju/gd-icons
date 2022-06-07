@@ -1,6 +1,6 @@
 {
   "name": "@gd-uikit/icons",
-  "version": "1.1.20",
+  "version": "1.1.23",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -15,7 +15,6 @@
     "svg",
     "inline",
     "figma",
-    "juuust",
     "design"
   ],
   "bugs": {
@@ -33,11 +32,15 @@
     "style": "fill"
   },
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "dependencies": {
     "nanoid": "^3.1.23",
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "shortid": "^2.2.16",
     "styled-components": "^5.1.1"
   },
