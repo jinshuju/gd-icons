@@ -1,3 +1,7 @@
+[![Npm](https://img.shields.io/npm/v/@gd-uikit/icons?logo=npm)](https://www.npmjs.com/package/@gd-uikit/icons)
+[![Icon Automation](https://github.com/jinshuju/gd-icons/workflows/icon-automation/badge.svg)](https://github.com/jinshuju/gd-icons/actions/workflows/push.yml)
+[![Deployment](https://github.com/jinshuju/gd-icons/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jinshuju/gd-icons/actions/workflows/pages/pages-build-deployment)
+
 # Icon Automation Workflow Using Figma
 
 It's a repository for [Figma Icon Automation Plugin](https://github.com/leadream/figma-icon-automation).
