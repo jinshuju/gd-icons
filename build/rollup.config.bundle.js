@@ -13,7 +13,7 @@ export default {
     { file: pkg.main, format: 'cjs' },
     { file: pkg.module, format: 'es' }
   ],
-  external: ['react', 'prop-types'],
+  external: ['react'],
   plugins: [
     copy({
       targets: [

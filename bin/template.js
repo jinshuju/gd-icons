@@ -33,29 +33,15 @@ const getElementCode = (iconName, attrs, svgCode) => {
 
   const code = `
   import React from 'react';
-  import PropTypes from 'prop-types';
 
   const ${ComponentName} = (props) => {
-    const { color, size, ...otherProps } = props;
+    const { color = 'currentColor', size = '24', ...otherProps } = props;
     return (
       <svg ${attrs}>
         ${svgCode}
       </svg>
     )
   };
-
-  ${ComponentName}.propTypes = {
-    color: PropTypes.string,
-    size: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number
-    ]),
-  }
-
-  ${ComponentName}.defaultProps = {
-    color: 'currentColor',
-    size: '24',
-  }
 
   export default ${ComponentName}
 `;
